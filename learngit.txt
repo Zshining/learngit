@@ -1,5 +1,21 @@
-
-删除文件：
+创建仓库：
+		新建仓库目录->初始化->添加内容->关联远程仓库
+		mkdir ->git init 
+ssh免密设置：
+		本机ssh公匙内容粘贴到github设置里的相应位置
+		ssh-keygen -t rsa -C "github邮箱" 
+版本回退：
+		查看文件变更log：
+			git log
+		查看精简log(commit-id(版本号) 版本说明)：
+			git log --pretty=oneline
+		回到上一版本：
+			git reset --hard HEAD^
+		回到指定版本：
+			git reset --hard 版本号
+		版本操作日志记录：
+			git reflog
+增删文件：
 	git add test.txt  // gitcommit -m "add test.txt" //rm test.txt-->git rm
 	test.txt-->git commit -m""
 	如工作库文件删错，从版本库恢复：git checkout -- test.txt
