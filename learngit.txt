@@ -19,6 +19,9 @@ ssh免密设置：
 	git add test.txt  // gitcommit -m "add test.txt" //rm test.txt-->git rm
 	test.txt-->git commit -m""
 	如工作库文件删错，从版本库恢复：git checkout -- test.txt
+状态管理：
+	git status #查看当前工作去文件的状态
+	git diff HEAD -- 文件名 #对比版本库文件与当前工作去文件的不同
 添加远程库：
 	即先建好本地库，再同步github库，首先github建同名空库，关联远程库和本地库
     git remote add origin git@github.com:Zshining/项目名.git
