@@ -7,6 +7,7 @@ ssh免密设置：
 版本回退：
 		查看文件变更log：
 			git log
+			如果回退到某一历史版本，则工作区和版本库都回退到该版本状态,日志只记录到该版本,要查看新版本要用 git reflog
 		查看精简log(commit-id(版本号) 版本说明)：
 			git log --pretty=oneline
 		回到上一版本：
